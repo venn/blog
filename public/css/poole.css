@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 h2 {
   margin-top: 1rem;
@@ -364,12 +365,26 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Meta data line below post title */
-.post-date {
+.post-meta {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   margin-top: -.5rem;
+  margin-bottom: 1rem;
   color: #9EABB3;
   font-size: 0.8em;
+}
+
+  .post-meta strong {
+    color: #9EABB3;
+  }
+
+.post-content a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  color: #57A3E8;
 }
 
 /* Related posts */
