@@ -397,6 +397,14 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
+.author {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border-top: #EBF2F6 1px solid;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
 
 /*
  * Pagination
