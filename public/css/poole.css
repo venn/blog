@@ -401,8 +401,8 @@ tbody tr:nth-child(odd) th {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   border-top: #EBF2F6 1px solid;
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 20px;
+  padding: 40px 0;
 }
 
 
