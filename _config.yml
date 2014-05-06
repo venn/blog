@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        none
+
+# Setup
+title:            Venn
+tagline:          Candid discussion on building a design-development agency
+url:              http://venn.lc
+
+author:
+  name:           Venn
+  url:            http://venn.lc
+
+paginate:         1
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/venn/venn
