@@ -303,13 +303,13 @@ tbody tr:nth-child(odd) th {
 
 .masthead {
   text-align: center;
-  height: 265px;
+  height: 350px;
   margin-bottom: 5rem;
   background: url('/public/images/bw_typewriter.jpg') center center;
   background-size: cover;
 }
 .masthead-title {
-  padding: 70px 0;
+  padding: 100px 0;
   margin: 0;
   color: #505050;
   display: block;
