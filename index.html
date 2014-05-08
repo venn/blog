@@ -12,7 +12,9 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-meta"><strong>{{ post.author }}</strong>&nbsp; &middot; &nbsp; {{ post.date | date: "%-d %B %Y" }}</span>
+    {% assign author = site.authors[post.author] %}
+
+    <span class="post-meta"><strong>{{ author.name }}</strong>&nbsp; &middot; &nbsp; {{ post.date | date: "%-d %B %Y" }}</span>
 
     <div class="post-content">
       {{ post.content }}

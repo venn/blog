@@ -21,3 +21,21 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/venn/venn
+
+
+# Authors
+authors:
+  zach:
+    name: Zach Aysan
+    title: Partner
+    avatar: /public/images/authors/zach.jpg
+
+  jaco:
+    name: Jaco Joubert
+    title: Partner
+    avatar: /public/images/authors/jaco.jpg
+
+  justin:
+    name: Justin Giancola
+    title: Partner
+    avatar: /public/images/authors/justin.jpg

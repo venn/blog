@@ -11,8 +11,13 @@ layout: default
   </div>
 </div>
 
+
+{% assign author = site.authors[page.author] %}
+
 <div class="author">
-  {{ page.author }}
+  <div class="photo"><img src="{{ author.avatar }}" /></div>
+  <div class="name">{{ author.name }}</div>
+  <div class="title">{{ author.title }}</div>
 </div>
 
 <div class="related" style="display: none">
