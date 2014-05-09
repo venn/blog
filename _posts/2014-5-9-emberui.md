@@ -1,6 +1,5 @@
 ---
 layout: post
-type: draft
 title: EmberUI
 subtitle: Nine months after we first wrote about it, liftoff!
 author: jaco
