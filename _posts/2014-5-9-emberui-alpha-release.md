@@ -3,6 +3,7 @@ layout: post
 title: EmberUI Alpha Release
 subtitle: Nine months after we first wrote about it, liftoff!
 author: jaco
+comments: true
 ---
 
 EmberUI has been a labor of love and it is finally ready to see the light of day. Please use it, fork it, patch it. We especially need help ironing out bugs in Windows and Linux.
