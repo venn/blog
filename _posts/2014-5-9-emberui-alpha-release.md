@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EmberUI
+title: EmberUI Alpha Release
 subtitle: Nine months after we first wrote about it, liftoff!
 author: jaco
 ---
