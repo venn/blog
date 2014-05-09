@@ -414,6 +414,12 @@ tbody tr:nth-child(odd) th {
   margin-left: -158px;
 }
 
+.post + .post {
+  border-top: solid 1px #e2e2e2;
+  padding-top: 60px;
+  margin-top: -20px;
+}
+
 @media (max-width: 1000px) {
     .post-content .image-wide {
       width: auto;
