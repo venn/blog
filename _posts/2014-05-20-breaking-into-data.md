@@ -27,7 +27,7 @@ Don't think that you need the perfect open dataset, sometimes the right non-open
 
 > But what startup is just going to give me their data?!
 
-Most of them, they wish they had someone looking at their data.
+Most of them. They wish they had someone looking at their data.
 
 > What about other sub-fields?
 
