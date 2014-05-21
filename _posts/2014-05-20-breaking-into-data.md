@@ -2,6 +2,7 @@
 layout: post
 title: Breaking into Data
 author: zach
+comments: true
 ---
 
 Recently someone I used to work with at 500px in my capacity as one of the two tech oriented C-levels reached out to meet for coffee. His email wasn't specific about what he was hoping to get out of the conversation, so I figured he was probably looking to get some input as to where he should head after finishing his last year of University.
