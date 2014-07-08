@@ -3,7 +3,6 @@ layout: post
 title: Designing for the color blind
 author: jaco
 comments: true
-type: draft
 ---
 
 Color blindess affects 7 to 10 percent of the male population. It is a large enough demographic that you should be spending some some time making sure that your designs are still usable by those affected.
