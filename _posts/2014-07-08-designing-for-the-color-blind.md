@@ -13,7 +13,7 @@ What can you do to improve your designs? There are a few basic things you can do
 
 ##### Pay attention to your link color
 
-Blue is the safest color. If you make your link color red or green, or event just tint it, you need to underline it as well or people may not realize it is a link. Take a look at this screenshot from CrunchBase. It is not clear at all that you can click on the names of people.
+Blue is the safest color. If you make your link color red or green, or even just tint it, you need to underline it as well or people may not realize it is a link. Take a look at this screenshot from CrunchBase. It is not clear at all that you can click on the names of people.
 
 <a href="http://www.crunchbase.com/organization/blablacar"><img src="/public/images/posts/2014-07-08/crunchbase.jpg" width="100%" /></a>
 
