@@ -31,7 +31,13 @@ My tests passed, and everything worked great, so I went on to start implementing
 
 But every now and then (around 5% of the time) my tests, which verified that signatures and encrypted chunks would Base58 encode and properly propagate to and from the blockchain, would fail.
 
-Then I'd immediately re-run them and they'd pass. So naturally I thought "race condition" and moved on. My code worked just fine a second later so it couldn't possibly be anything else. I always thought that Rspec would do the right thing and run tests in parallel, since tests are supposed to have no side effects. Also my tests were pretty slow, because certain operations are not possible with less than 1024 bit keys in Ruby's OpenSSL due to security concerns, so to speed things up I used variables, instead of the normal `let(:signed_blob) = { long_running_process }` to re-instantiate certain test variables on every test. So I figured it was possible I was inadvertently opening the door to a race condition somewhere. I should note at this point that when I mentioned this to Justin, he shook his head and informed me that it probably wasn't a race condition.
+Then I'd immediately re-run them and they'd pass. So naturally I thought "race condition" and moved on. My code worked just fine a second later so it couldn't possibly be anything else. I always thought that Rspec would do the right thing and run tests in parallel, since tests are supposed to have no side effects. Also my tests were pretty slow, because certain operations are not possible with less than 1024 bit keys in Ruby's OpenSSL due to security concerns, so to speed things up I used variables that were shared from spec to spec, instead of the normal:
+
+``` ruby
+let(:signed_blob) = { long_running_process }
+```
+
+So I figured it was possible I was inadvertently opening the door to a race condition somewhere. I should note at this point that when I mentioned this to Justin, he shook his head and informed me that it probably wasn't a race condition and told me that Rspec does not run things in parallel by default.
 
 I continue on letting these tests randomly fail until I started the file-upload code, which splits large files into smaller chunks then puts them back together. When those started failing I knew the problem wasn't OpenSSL. With a now reliably failing test I started diving into where my code was breaking down.
 
