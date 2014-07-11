@@ -59,6 +59,6 @@ I discovered problem quite quickly. When you have binary data that starts with "
 
 I was loosing all my leading zeros! The fix was really easy, just add one bit at the start and encode it. When decoding it, ignore the first bit.
 
-It also explains why my initial build was failing roughly 5% of the time, since I was representing the binary data as a hexidecimal encoding before converting it into an integer 1/16 of the time the first hexadecimal number was a "0".
+It also explains why my initial build was failing roughly 5% of the time, since I was representing the binary data as a hexadecimal encoding before converting it into an integer 1/16 of the time the first hexadecimal number was a "0".
 
 Heisenbugs are hard, but next time I encounter one I'm going to resist thinking *race condition*.
