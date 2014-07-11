@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's Probably not a Race Condition
+title: It's probably not a race condition
 author: zach
 comments: true
 ---
