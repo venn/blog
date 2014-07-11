@@ -53,7 +53,7 @@ and
 Base58.decode(base58_string).to_i(2)
 ``` 
 
-so I could print the actual ones and zeros to compare them bit by bit (Achievement Unlocked - Literally Bit by Bit!).
+so I could print the actual ones and zeros to compare them bit by bit (Achievement Unlocked - *Literally Bit by Bit!*).
 
 I discovered problem quite quickly. When you have binary data that starts with "0001111" and you represent it as an integer it is equivalent to "1111" since leading zeros are meaningless on a number line. But without those leading integers, it wont' reassemble the same data.
 
