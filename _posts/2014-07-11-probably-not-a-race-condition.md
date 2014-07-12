@@ -57,7 +57,7 @@ so I could print the actual ones and zeros to compare them bit by bit (Achieveme
 
 I discovered problem quite quickly. When you have binary data that starts with "0001111" and you represent it as an integer it is equivalent to "1111" since leading zeros are meaningless on a number line. But without those leading integers, it wont' reassemble the same data.
 
-I was loosing all my leading zeros! The fix was really easy, just add one bit at the start and encode it. When decoding it, ignore the first bit.
+I was losing all my leading zeros! The fix was really easy, just add one bit at the start and encode it. When decoding it, ignore the first bit.
 
 It also explains why my initial build was failing roughly 5% of the time, since I was representing the binary data as a hexadecimal encoding before converting it into an integer 1/16 of the time the first hexadecimal number was a "0".
 
