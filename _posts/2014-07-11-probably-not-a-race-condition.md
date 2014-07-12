@@ -13,17 +13,17 @@ Rather than confuse people by including both Base64 and Base58 encoding, I decid
 
 I was writing the project in Ruby so to convert the binary chunk into a Base58 encoding I'd written:
 
-``` ruby
+~~~ ruby
 Base58.encode(binary_blob.unpack("H*").inject(&:+).to_i(16))
-```
+~~~
 
 Which basically reads as: Take the binary blob, represent it as Base16 characters, append all those characters together, convert them to an integer, then convert that integer into a Base58 encoded string.
 
 To decrypt I'd:
 
-``` ruby
+~~~ ruby
 [Base58.decode(base58_string).to_s(16)].pack("H*")
-```
+~~~
 
 I should have been able to go straight from binary to Base58, but the library I was using required integer input.
 
@@ -33,9 +33,9 @@ But every now and then (around 5% of the time) my tests, which verified that sig
 
 Then I'd immediately re-run them and they'd pass. So naturally I thought "race condition" and moved on. My code worked just fine a second later so it couldn't possibly be anything else. I always thought that Rspec would do the right thing and run tests in parallel, since tests are supposed to have no side effects. Also my tests were pretty slow, because certain operations are not possible with less than 1024 bit keys in Ruby's OpenSSL due to security concerns, so to speed things up I used variables that were shared from spec to spec, instead of the normal:
 
-``` ruby
+~~~ ruby
 let(:signed_blob) = { long_running_process }
-```
+~~~
 
 So I figured it was possible I was inadvertently opening the door to a race condition somewhere. I should note at this point that when I mentioned this to Justin, he shook his head and informed me that it probably wasn't a race condition and told me that Rspec does not run things in parallel by default.
 
@@ -43,15 +43,15 @@ I continue on letting these tests randomly fail until I started the file-upload 
 
 The problem with debugging binary data stuff is that you can't just "see" what you are doing. Printing it to the terminal will just flood you with a whitespace and unreadable characters. Frustrated, I finally decided I was going to compare binary to binary before and after. To do this I changed my hex based packing code to binary:
 
-``` ruby
+~~~ ruby
 binary_blob.unpack("b*")
-```
+~~~
 
 and
 
-``` ruby
+~~~ ruby
 Base58.decode(base58_string).to_i(2)
-``` 
+~~~
 
 so I could print the actual ones and zeros to compare them bit by bit (Achievement Unlocked - *Literally Bit by Bit!*).
 
