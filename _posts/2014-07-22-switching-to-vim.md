@@ -41,6 +41,6 @@ Furthermore, once you start making these edits mechanically, without really thin
 
 Understanding this made me feel strangely liberated: I don't have to become an expert with my editor in order to be able to use it well.
 
-[^1]: Don't ever do this, even if you are an idiot.
+[^1]: Don't ever do this.
 
 [^2]: Fear of being excommunicated from the emacs community was another risk.
