@@ -3,7 +3,6 @@ layout: post
 title: Switching to vim
 author: justin
 comments: true
-type: draft
 ---
 
 You have likely encountered dozens of posts wherein the author extolls the virtues of their new and Vi IMproved life. They save thousands of tedious trips between mouse and keyboard each day. They edit text at the speed of thought. They can perform emergency hotfix heroics becuase vim is installed on every production server.[^1]
