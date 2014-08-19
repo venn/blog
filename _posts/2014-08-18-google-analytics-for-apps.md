@@ -3,8 +3,8 @@ layout: post
 title: Google Analytics for mobile and web applications
 author: zach
 comments: true
-draft: true
---
+type: draft
+---
 
 Google Analytics is still the dominant tool for web statistics for webistes across the web. Depending on the measurement methodology used, somewhere between fifty and sixty percent of the properties on the web have Google Analytics enabled.
 
@@ -20,7 +20,7 @@ While a platform like [Mixpanel](https://mixpanel.com) or even more generally [S
 
 # Cohorts
 
-Cohorts are super useful. How many users you retain from month one to month twelve impacts a number of your business' key objectives: Churn, Life Time Value (LTV), even Average Revenue Per Unit, since longer staying customers end up upgrading to larger packages. 
+Cohorts are super useful. How many users you retain from month one to month twelve impacts a number of your business' key objectives: Churn, Life Time Value (LTV), even Average Revenue Per Unit, since longer staying customers end up upgrading to larger packages.
 
 You can set up cohorts in Google Analytics in two seperate ways. If your app is sign-in only (like say, Tinder, where the only action an unsigned up user can take is to connect his or her Facebook account) then it is pretty easy, just select *Date of First Session* under segments (click from the admin tab) and select the date range that defines the segment. Try to stick to monthly and weekly cohorts though. Unless you are first launching something really new and are really interested in fine grain adoption and retention data, I don't recommend daily cohorts, since it's too much work for samples that have too much statistical noise cohort to cohort.
 
@@ -47,7 +47,7 @@ While cohorts and funnels should be the back bone of most SaaS app models, they 
 The the two tools we have to create these different segments are:
 
 1. Custom Variables + Segments.
-2. Events + Advanced Sequence Segments. 
+2. Events + Advanced Sequence Segments.
 
 This is best illustrated by example:
 
