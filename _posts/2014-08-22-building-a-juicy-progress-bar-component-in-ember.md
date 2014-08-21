@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a juice progress bar component in Ember
+title: Creating a juicy progress bar component in Ember
 author: jaco
 comments: true
 type: draft
