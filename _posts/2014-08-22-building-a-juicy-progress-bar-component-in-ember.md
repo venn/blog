@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Creating a juicy progress bar component in Ember
+title: Building a juicy progress bar component in Ember
 author: jaco
 comments: true
-type: draft
 ---
 
 Over the last week I have been working on building an image uploader for an open source project I am working on.
 
 For this application we are making use of circular profile images. I wanted users to see how the image they are uploading would be used in the application while also showing the progress of the upload. By combining the two we get to reinforce that the bar indicated upload progress, and also allow for a very tight aesthetic.
 
-You can see the final version below. Try hitting the simulate button until the "upload" is complete.
+You can see the final version below. Hit the simulate button to see it in action.
 
 
 <div style="height: 300px; overflow: hidden;">
   <div style="margin-top: -50px; overflow: hidden;">
-    <iframe src="http://jsbin.com/behano/10/embed?output" width="100%" height="400" style="border: none;"></iframe>
+    <iframe src="http://jsbin.com/behano/12/embed?output" width="100%" height="400" style="border: none;"></iframe>
   </div>
 </div>
 
@@ -84,4 +83,4 @@ The styling itself happens via CSS, so it is very easy to customize the colors a
 
 The Ember code is pretty basic since you are just doing basic math to calculate radius, circumference, and progress percentage. I haven't yet decided if this is a significant enough component to make it into [EmberUI](http://emberui.com), but it could be pretty useful if made more customizable.
 
-You can see the full component code here: [http://jsbin.com/behano/10/](http://jsbin.com/behano/10/)
+You can see the full component code here: [http://jsbin.com/behano/12/](http://jsbin.com/behano/12/)
