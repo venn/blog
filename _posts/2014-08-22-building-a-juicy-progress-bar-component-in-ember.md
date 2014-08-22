@@ -83,4 +83,4 @@ The styling itself happens via CSS, so it is very easy to customize the colors a
 
 The Ember code is pretty basic since you are just doing basic math to calculate radius, circumference, and progress percentage. I haven't yet decided if this is a significant enough component to make it into [EmberUI](http://emberui.com), but it could be pretty useful if made more customizable.
 
-You can see the full component code here: [http://jsbin.com/behano/12/](http://jsbin.com/behano/12/)
+You can see the full component code here: [http://jsbin.com/behano/](http://jsbin.com/behano/)
