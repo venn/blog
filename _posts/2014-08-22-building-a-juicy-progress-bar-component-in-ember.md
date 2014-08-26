@@ -14,7 +14,7 @@ You can see the final version below. Hit the simulate button to see it in action
 
 <div style="height: 300px; overflow: hidden;">
   <div style="margin-top: -50px; overflow: hidden;">
-    <iframe src="http://jsbin.com/behano/12/embed?output" width="100%" height="400" style="border: none;"></iframe>
+    <iframe src="http://jsbin.com/behano/14/embed?output" width="100%" height="400" style="border: none;"></iframe>
   </div>
 </div>
 
@@ -50,9 +50,10 @@ dashOffset: Ember.computed('diameter', 'percentage', function() {
 
 The styling itself happens via CSS, so it is very easy to customize the colors and animations.
 
+Edit: I removed the rotate transformation from the circle itself because Firefox uses a different origin point than Chrome. Instead I apply the rotate to the div that contains the svg element. The rotate is necessary because the dash starts at the 90deg point and we want to shift it to 0deg.
+
 ~~~ CSS
 .circular-progress-bar .bar {
-  transform: rotate(-90deg);
   stroke: #1787e5;
   fill: none;
   stroke-linecap: round;
