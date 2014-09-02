@@ -17,6 +17,6 @@ Furthermore, the infographic only covers a single fundraising program per cause,
 
 In any case, here is my redesign of the infographic:
 
-![Redesigned](http://i.imgur.com/Gs6t5dO.png)
+![Redesigned](http://i.imgur.com/Iel1T2t.png)
 
 What I would really like is a better data source so we can properly compare which causes have the most immediate need.
