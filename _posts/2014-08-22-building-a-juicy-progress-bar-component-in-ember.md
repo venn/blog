@@ -21,14 +21,14 @@ You can see the final version below. Hit the simulate button to see it in action
 Creating this effect is not possible in CSS as far as I know, so I decided to build it using SVG. Here is the basic SVG setup:
 
 {% highlight html %}
-<svg {{bind-attr viewBox="viewBox"}} xmlns="http://www.w3.org/2000/svg">
-  <circle class="bar" {{bind-attr
+<svg {% raw %}{{bind-attr viewBox="viewBox"}}{% endraw %} xmlns="http://www.w3.org/2000/svg">
+  <circle class="bar" {% raw %}{{bind-attr
     stroke-dasharray="circumference"
     stroke-dashoffset="dashOffset"
     cx="radius"
     cy="radius"
     stroke-width="strokeWidth"
-    r="radiusWithoutStroke"}}
+    r="radiusWithoutStroke"}}{% endraw %}
   ></circle>
 </svg>
 {% endhighlight %}
