@@ -20,7 +20,7 @@ You can see the final version below. Hit the simulate button to see it in action
 
 Creating this effect is not possible in CSS as far as I know, so I decided to build it using SVG. Here is the basic SVG setup:
 
-~~~ HTML
+{% highlight html %}
 <svg { {bind-attr viewBox="viewBox"}} xmlns="http://www.w3.org/2000/svg">
   <circle class="bar" { {bind-attr
     stroke-dasharray="circumference"
@@ -31,7 +31,7 @@ Creating this effect is not possible in CSS as far as I know, so I decided to bu
     r="radiusWithoutStroke"}}
   ></circle>
 </svg>
-~~~
+{% endhighlight %}
 
 The user supplies a diameter which we use to size the SVG container and to draw a circle that fill it. We then make use of a dashed line for the stroke, with each dash being the length of the circle's circumference. Then, by shifting the starting point of the line we can show how much progress has been made.
 
