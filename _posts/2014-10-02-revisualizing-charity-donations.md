@@ -13,4 +13,4 @@ First, it uses circles for comparison. Humans are good at length comparisons, av
 
 Furthermore, the infographic only covers a single fundraising program per cause, which warps the analysis into punishing programs that are the most successful.
 
-In any case, here is my [redesign of the infographic](http://i.imgur.com/98qOhrW.png). What I would really like is a better data source so we can properly compare which causes have the most immediate need.
+In any case, here is my [redesign of the infographic](http://i.imgur.com/Gs6t5dO.png). What I would really like is a better data source so we can properly compare which causes have the most immediate need.
