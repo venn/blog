@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Proper Graphs
+title: Revisualizing Charity Donations
 author: zach
 comments: true
-type: draft
 ---
 
 I recently came across an [interesting graphic](http://cdn3.vox-cdn.com/uploads/chorus_asset/file/663618/Donating.vs.Death-Graph.0.jpg), but I was left with more questions than answers.
