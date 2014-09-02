@@ -35,7 +35,7 @@ Creating this effect is not possible in CSS as far as I know, so I decided to bu
 
 The user supplies a diameter which we use to size the SVG container and to draw a circle that fill it. We then make use of a dashed line for the stroke, with each dash being the length of the circle's circumference. Then, by shifting the starting point of the line we can show how much progress has been made.
 
-~~~ JS
+{% highlight javascript %}
 dashOffset: Ember.computed('diameter', 'percentage', function() {
   var percentage = this.get('percentage') * 0.01;
   var circumference = this.get('circumference');
@@ -46,13 +46,13 @@ dashOffset: Ember.computed('diameter', 'percentage', function() {
 
   return circumference - (circumference * percentage) + (strokeWidth * 2);
 })
-~~~
+{% endhighlight %}
 
 The styling itself happens via CSS, so it is very easy to customize the colors and animations.
 
 Edit: I removed the rotate transformation from the circle itself because Firefox uses a different origin point than Chrome. Instead I apply the rotate to the div that contains the svg element. The rotate is necessary because the dash starts at the 90deg point and we want to shift it to 0deg.
 
-~~~ CSS
+{% highlight css %}
 .circular-progress-bar .bar {
   stroke: #1787e5;
   fill: none;
@@ -80,7 +80,7 @@ Edit: I removed the rotate transformation from the circle itself because Firefox
     box-shadow: 0px 0px 2px 40px rgba(143, 215, 19, 0);
   }
 }
-~~~
+{% endhighlight %}
 
 The Ember code is pretty basic since you are just doing basic math to calculate radius, circumference, and progress percentage. I haven't yet decided if this is a significant enough component to make it into [EmberUI](http://emberui.com), but it could be pretty useful if made more customizable.
 
