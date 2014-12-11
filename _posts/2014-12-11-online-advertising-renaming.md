@@ -34,7 +34,7 @@ A company like Apple could make it - completely eviscerating Google in the proce
 
 [^1]: Funny enough, my first startup (in 2009) was a web crawler that crawled the web and recorded online advertising. It failed because search re-targeting was taking off and to get this type of data you needed to get it though some kind of browswer plugin, which is how other ad intelligence companies do it.
 
-Also, the reason I wrote the crawler in the first place was that I figured if enough companies were doing it I could write a story for the New York Times or something. 
+Also, the reason I wrote the crawler in the first place was that I figured if enough companies were doing it I could write a story for the New York Times or something.
 
 [^2]: I'd always known this in an abstract way, but I'd figured it would be too hard to tie it all together across different domains.
 
