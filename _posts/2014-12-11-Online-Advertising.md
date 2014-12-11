@@ -3,7 +3,7 @@ layout: post
 title: Online advertising and the future of web browsing
 author: zach
 comments: true
-draft: true
+type: draft
 --
 
 For a long time I resisted installing an online ad blocker. I felt that doing so would both make me a net drain on content producing websites, and would warp my view of how websites look and work. I also thought that it was bad enough that I had to trust established companies like Google, Apple, and Canonical to not steal my passwords while browsing the internet, but by enabling a third party browser plugin I was trusting developers of significantly less repute.
